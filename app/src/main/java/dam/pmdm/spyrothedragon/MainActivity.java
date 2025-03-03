@@ -1,8 +1,11 @@
 package dam.pmdm.spyrothedragon;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -22,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences prefs = getSharedPreferences("TutorialPrefs", MODE_PRIVATE);
+        boolean tutorialCompleted = prefs.getBoolean("tutorial_completed", false);
+
+        if (!tutorialCompleted) {
+            new Handler().postDelayed(() -> showTutorial(), 500);
+        }
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -48,6 +58,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        if (getIntent().hasExtra("navigate_to")) {
+            int destination = getIntent().getIntExtra("navigate_to", -1);
+            if (destination != -1 && navController != null) {
+                navController.navigate(destination);
+            }
+        }
+
+    }
+
+    public void changeFragment(int fragmentId) {
+        if (navController != null) {
+            navController.navigate(fragmentId);
+        }
+    }
+
+    private void showTutorial() {
+        TutorialOverlayView overlay = new TutorialOverlayView(this);
+        addContentView(overlay, new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
     }
 
     private boolean selectedBottomMenu(@NonNull MenuItem menuItem) {

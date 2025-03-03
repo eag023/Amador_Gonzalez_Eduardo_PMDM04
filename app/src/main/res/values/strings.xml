@@ -4,6 +4,26 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Eduardo Amador González.</b></string>
     <string name="accept">Aceptar</string>
+
+    <string name="bienvenido">BIENVENIDO</string>
+    <string name="comenzar">COMENZAR</string>
+    <string name="parr1">Prepárate para explorar el mundo mágico de esta aplicación inspirada en</string>
+    <string name="parr2">Aquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y montones de tesoros brillantes.
+    \n\n ¿Listo para empezar? \n\n Pulsa &quot;Comenzar&quot; cuando quieras para iniciar la guía interactiva.</string>
+
+    <string name="personajesBocadillo">Aquí podrás explorar a todos los personajes del mundo de Spyro</string>
+    <string name="mundosBocadillo">En esta pestaña encontrás todos los mundos conocidos del universo de Spyro</string>
+    <string name="coleccionablesBocadillo">Y finalmente aquí se encuentran todos los elementos coleccionables de la saga</string>
+    <string name="acercaBocadillo">Además podrás consultar más información de la aplicación pulsando en este botón</string>
+
+    <string name="enhorabuena">ENHORABUENA</string>
+    <string name="terminar">TERMINAR</string>
+    <string name="parr3">¡Has completado la guía!\n Ahora sabes manejarte por las pestañas:</string>
+    <string name="parr4">Ya no tendrás problemas a la hora de usar esta aplicacón.</string>
+
+    <string name="omitir">Omitir guía</string>
+    <string name="avanzar">Pulsa el bocadillo para avanzar</string>
+
 </resources>
