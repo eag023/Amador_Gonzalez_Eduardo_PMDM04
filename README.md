@@ -20,4 +20,4 @@ Para clonar un repositorio:
 Una vez clonado el repositorio debemos instalar Android Studio. Al abrir el proyecto, Android Studio descargará e instalará las dependencias necesarias automáticamente.
 
 ## CONCLUSIONES:
-El diseño de las pantallas del tutorial es lo que más me ha gustado. A la hora de implementarlo ha sido sencillo, al igual que la animación de los bocadillos y las flechas. Lo que más me ha costado ha sido añadir los easter eggs. La aplicación crasheaba al principio por los clicks en los elementos pero, una vez solucioné este fallo, darle funcionalidad fue sencillo.
+El diseño de las pantallas del tutorial es lo que más me ha gustado. A la hora de implementarlo ha sido sencillo, al igual que la animación de los bocadillos y las flechas y añadir el sonido. Lo que más me ha costado ha sido añadir los easter eggs. La aplicación crasheaba al principio por los clicks en los elementos pero, una vez solucioné este fallo, darle funcionalidad es lo que menos tiempo me llevó.
